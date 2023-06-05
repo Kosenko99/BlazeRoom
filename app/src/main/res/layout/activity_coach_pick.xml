@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon1"
+    tools:context=".CoachPickActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Расписание тренеров"
+        android:fontFamily="@font/gilroy_bold"
+        android:textColor="#E7E7E7"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dateSpinnerNewRecordsConstraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Spinner
+            android:id="@+id/CalendarCoachPicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:animationCache="true"
+            android:backgroundTint="#0020C5"
+            android:dropDownSelector="@android:drawable/arrow_down_float"
+            android:shape="rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/textViewCalendarDateCoach"
+        android:layout_width="119dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Выбор даты"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateSpinnerNewRecordsConstraintLayout" />
+
+    <Button
+        android:id="@+id/buttonCalendarDataCoach"
+        android:layout_width="112dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Выбрать"
+        android:textColor="#031DA7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateSpinnerNewRecordsConstraintLayout" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/material_on_surface_stroke"
+        android:onClick="deleteDate"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCalendarDataCoach"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalendarDataCoach"
+        app:layout_constraintTop_toTopOf="@+id/buttonCalendarDataCoach"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCalendarDateCoach">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tableCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4px"
+                    android:background="@drawable/tablerowstyle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="4px"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:gravity="center"
+                        android:text="Дата/\nВремя"
+                        android:textColor="#031DA7"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="4"
+                        android:layout_margin="4px"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:gravity="center"
+                        android:text="ФИО"
+                        android:textColor="#031DA7"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_weight="5"
+                        android:layout_margin="4px"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:gravity="center"
+                        android:text="Место"
+                        android:textColor="#031DA7"
+                        android:textSize="15sp" />
+                </TableRow>
+
+            </TableLayout>
+            <TextView
+                android:id="@+id/nonCoach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#E7E7E7"
+                android:gravity="center"
+                android:fontFamily="@font/gilroy_black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Игроки не найдены" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

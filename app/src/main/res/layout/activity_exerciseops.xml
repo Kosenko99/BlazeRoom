@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon1"
+    tools:context=".ExerciseopsActivity">
+
+    <TextView
+        android:id="@+id/textViewExerciseopsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Fast Feet"
+        android:textColor="#E7E7E7"
+        android:fontFamily="@font/gilroy_bold"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewExerciseops"
+        android:layout_width="201dp"
+        android:layout_height="209dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExerciseopsTitle"
+        tools:srcCompat="@drawable/fastfeet" />
+
+    <TextView
+        android:id="@+id/textViewExerciseopsCountBlaze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Количество BlazePod"
+        android:textColor="#E7E7E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewExerciseops" />
+
+    <TextView
+        android:id="@+id/textViewExerciseopsNumberBlaze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="4"
+        android:textColor="#E7E7E7"
+        android:fontFamily="@font/gilroy_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExerciseopsCountBlaze" />
+
+    <TextView
+        android:id="@+id/textViewExerciseopsTitleDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Описание"
+        android:textColor="#E7E7E7"
+        android:fontFamily="@font/gilroy_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExerciseopsNumberBlaze" />
+
+    <TextView
+        android:id="@+id/textViewExerciseopsDescriptionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#E7E7E7"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Fast Feet - Упражнение нацеленное на развитие скорости, ловкости ног. Помимо этого, упражнение выполняется в самом максимальном темпе. Задача спортсмена является касание ногой BlazePod-а, загорающегося синим цветом."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExerciseopsTitleDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

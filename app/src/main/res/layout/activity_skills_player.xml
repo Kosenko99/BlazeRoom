@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon1"
+    tools:context=".SkillsPlayerActivity">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Мои данные"
+        android:textColor="#E7E7E7"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="ФИО:"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewFioLoad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Косенко Евгений Валерьевич"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewFIO"
+        app:layout_constraintTop_toTopOf="@+id/textViewFIO" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Дата рождения:"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFioLoad" />
+
+    <TextView
+        android:id="@+id/textViewAgeLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="02.11.1999"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewAge"
+        app:layout_constraintTop_toTopOf="@+id/textViewAge" />
+
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Номер:"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAge" />
+
+
+    <TextView
+        android:id="@+id/textViewNumberLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="89137058730"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNumber"
+        app:layout_constraintTop_toTopOf="@+id/textViewNumber" />
+
+    <TextView
+        android:id="@+id/textViewTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Навыки"
+        android:textColor="#E7E7E7"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumberLoad" />
+
+
+    <TextView
+        android:id="@+id/textViewSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Скорость"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle2" />
+
+    <TextView
+        android:id="@+id/textViewSpeedLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/gilroy_black"
+        android:text="0"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSpeed"
+        app:layout_constraintTop_toTopOf="@+id/textViewSpeed" />
+
+
+    <TextView
+        android:id="@+id/textViewAgility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Ловкость"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpeed" />
+
+    <TextView
+        android:id="@+id/textViewAgilityLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/gilroy_black"
+        android:text="0"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewAgility"
+        app:layout_constraintTop_toTopOf="@+id/textViewAgility" />
+
+    <TextView
+        android:id="@+id/textViewСoord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Координация"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAgility" />
+
+    <TextView
+        android:id="@+id/textViewCoordLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_black"
+        android:text="0"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAgilityLoad"
+        app:layout_constraintStart_toStartOf="@+id/textViewAgilityLoad"
+        app:layout_constraintTop_toTopOf="@+id/textViewСoord" />
+
+    <TextView
+        android:id="@+id/textViewReaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Реакция"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewСoord" />
+
+    <TextView
+        android:id="@+id/textViewReactionLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_black"
+        android:text="0"
+        android:textColor="#E7E7E7"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCoordLoad"
+        app:layout_constraintStart_toStartOf="@+id/textViewCoordLoad"
+        app:layout_constraintTop_toTopOf="@+id/textViewReaction" />
+</androidx.constraintlayout.widget.ConstraintLayout>

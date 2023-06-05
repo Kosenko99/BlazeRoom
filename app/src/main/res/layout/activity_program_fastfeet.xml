@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon1"
+    tools:context=".ProgramFastfeetActivity">
+
+    <TextView
+        android:id="@+id/textViewProgramFastfeetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Быстрые ноги"
+        android:fontFamily="@font/gilroy_bold"
+        android:textColor="#E7E7E7"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewProgramFastfeet"
+        android:layout_width="108dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProgramFastfeetTitle"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewProgramFastfeetDescriptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/gilroy_black"
+        android:textColor="#E7E7E7"
+        android:text="Описание"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProgramFastfeet"
+        app:layout_constraintTop_toTopOf="@+id/imageViewProgramFastfeet" />
+
+    <TextView
+        android:id="@+id/textViewProgramFastfeetDescriptionText"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Данная программа включает в себя набор упражнений, направленных на развитие ловкости , координации и самое главное, скорости ног."
+        android:textColor="#E7E7E7"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewProgramFastfeet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProgramFastfeet"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProgramFastfeetDescriptionTitle" />
+
+    <TableLayout
+        android:id="@+id/tableProgramFastfeet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProgramFastfeet">
+
+        <TableRow
+            android:layout_margin="4px"
+            android:background="@drawable/layout_bg">
+
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="2"
+                android:layout_margin="4px"
+                android:fontFamily="@font/gilroy_bold"
+                android:textColor="#031DA7"
+                android:gravity="center"
+                android:text="Упражнение"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:layout_margin="4px"
+                android:fontFamily="@font/gilroy_bold"
+                android:textColor="#031DA7"
+                android:gravity="center"
+                android:text="Количество повторов"
+                android:textSize="15sp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

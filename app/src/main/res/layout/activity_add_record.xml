@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintMain"
+    android:layout_width="match_parent"
+    android:background="@drawable/fon1"
+    android:layout_height="match_parent"
+    tools:context=".AddRecord">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Записаться"
+        android:fontFamily="@font/gilroy_bold"
+        android:textColor="#E7E7E7"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dateSpinnerNewRecordsConstraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="40px"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Spinner
+            android:id="@+id/dateNewRecordsSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:animationCache="true"
+            android:backgroundTint="#0020ED"
+            android:dropDownSelector="@android:drawable/arrow_down_float"
+            android:shape="rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/editTextTextPersonFIO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#E4E4E4"
+        android:ems="10"
+        android:fontFamily="@font/gilroy_medium"
+        android:inputType="textPersonName"
+        android:hint="ФИО"
+        android:textColor="#E7E7E7"
+        android:textColorHint="#E7E7E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateSpinnerNewRecordsPlaceConstraintLayout" />
+
+    <Button
+        android:id="@+id/editTextTextDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40px"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Выбор даты"
+        android:textColor="#031DA7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTimeAddRecord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextDate">
+
+
+        <Spinner
+            android:id="@+id/sTimeAddRecord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:animationCache="true"
+            android:backgroundTint="#0020ED"
+            android:dropDownSelector="@android:drawable/arrow_down_float"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dateSpinnerNewRecordsPlaceConstraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateSpinnerNewRecordsConstraintLayout">
+
+
+        <Spinner
+            android:id="@+id/dateNewRecordsSpinnerPlace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:animationCache="true"
+            android:backgroundTint="#0020ED"
+            android:dropDownSelector="@android:drawable/arrow_down_float"
+            android:shape="rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/gilroy_bold"
+        android:onClick="clickRecord"
+        android:text="Записать"
+        android:textColor="#031DA7"
+        android:textColorHint="#E7E7E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clTimeAddRecord" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/gilroy_medium"
+        android:textColor="#E7E7E7"
+        android:textColorHint="#E7E7E7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRecord" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#E4E4E4"
+        android:fontFamily="@font/gilroy_medium"
+        android:hint="Телефон"
+        android:textColor="#E7E7E7"
+        android:textColorHint="#E7E7E7"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonFIO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

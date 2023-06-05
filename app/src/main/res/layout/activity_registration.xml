@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon1"
+    tools:context=".JoinActivity">
+
+    <TextView
+        android:id="@+id/titleTextViewRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Регистрация"
+        android:textColor="#E7E7E7"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hintTextViewRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="Введите свои данные"
+        android:textColor="#DAD7D7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextViewRegistration" />
+
+    <EditText
+        android:id="@+id/loginEditTextRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#F4EBEB"
+        android:ems="10"
+        android:foregroundTint="#EAE5E5"
+        android:hint="Введите вашу почту"
+        android:inputType="textEmailAddress"
+        android:shadowColor="#F4F2F2"
+        android:textColor="#DAD7D7"
+        android:textColorHint="#DDDDDD"
+        android:textColorLink="#F3F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hintTextViewRegistration" />
+
+
+    <EditText
+        android:id="@+id/passwrodEditTextRegistration1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#F4EBEB"
+        android:ems="10"
+        android:foregroundTint="#EAE5E5"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:shadowColor="#F4F2F2"
+        android:textColor="#DAD7D7"
+        android:textColorHint="#DDDDDD"
+        android:textColorLink="#F3F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginEditTextRegistration" />
+
+
+    <EditText
+        android:id="@+id/fioEditTextRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#F4EBEB"
+        android:ems="10"
+        android:foregroundTint="#EAE5E5"
+        android:hint="Введите имя"
+        android:inputType="text"
+        android:shadowColor="#F4F2F2"
+        android:textColor="#DAD7D7"
+        android:textColorHint="#DDDDDD"
+        android:textColorLink="#F3F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwrodEditTextRegistration1" />
+
+
+    <EditText
+        android:id="@+id/numberEditTextRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#F4EBEB"
+        android:ems="10"
+        android:foregroundTint="#EAE5E5"
+        android:hint="Введите номер телефона"
+        android:inputType="number"
+        android:shadowColor="#F4F2F2"
+        android:textColor="#DAD7D7"
+        android:textColorHint="#DDDDDD"
+        android:textColorLink="#F3F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fioEditTextRegistration" />
+
+    <Button
+        android:id="@+id/dateBirthEditTextRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Выбор даты рождения"
+        android:textColor="#031DA7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberEditTextRegistration" />
+
+    <Button
+        android:id="@+id/JoinButtonRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/gilroy_bold"
+        android:onClick="registration"
+        android:text="Регистрация"
+        android:textColor="#031DA7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateBirthEditTextRegistration" />
+
+    <TextView
+        android:id="@+id/errorTextViewRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JoinButtonRegistration" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon1"
+    tools:context=".JoinActivity">
+
+    <TextView
+        android:id="@+id/titleTextViewAuthorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Авторизация"
+        android:textColor="#E7E7E7"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="Введите свой логин"
+        android:textColor="#DAD7D7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextViewAuthorization"/>
+
+    <EditText
+        android:id="@+id/editTextLoginJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#F4EBEB"
+        android:ems="10"
+        android:foregroundTint="#EAE5E5"
+        android:hint="Введите вашу почту"
+        android:inputType="textEmailAddress"
+        android:shadowColor="#F4F2F2"
+        android:textColor="#DAD7D7"
+        android:textColorHint="#DDDDDD"
+        android:textColorLink="#F3F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <EditText
+        android:id="@+id/editTextTextPasswordAuthorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#F4EBEB"
+        android:ems="10"
+        android:foregroundTint="#EAE5E5"
+        android:hint="Введите ваш пароль"
+        android:inputType="textPassword"
+        android:shadowColor="#F4F2F2"
+        android:textColor="#DAD7D7"
+        android:textColorHint="#DDDDDD"
+        android:textColorLink="#F3F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginJoin" />
+
+    <CheckBox
+        android:id="@+id/checkBoxUserDataRememberAuthorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:buttonTint="#ECECEC"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Запомнить пользователя"
+        android:textColor="#DAD7D7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordAuthorization" />
+
+    <CheckBox
+        android:id="@+id/checkBoxData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:buttonTint="#E1DFDF"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Согласен на обработку данных"
+        android:textColor="#DAD7D7"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxUserDataRememberAuthorization"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxUserDataRememberAuthorization" />
+
+    <Button
+        android:id="@+id/buttonJoinAuthorization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/gilroy_bold"
+        android:onClick="checkDataFunction"
+        android:text="Войти"
+        android:textColor="#031DA7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxData" />
+
+    <TextView
+        android:id="@+id/textViewErrorOutputAuthorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonJoinAuthorization" />
+
+    <Button
+        android:id="@+id/buttonRegistrationAuthorization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/gilroy_bold"
+        android:onClick="registration"
+        android:text="Регистрация"
+        android:textColor="#031DA7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewErrorOutputAuthorization" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
